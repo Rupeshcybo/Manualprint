@@ -66,6 +66,14 @@
         @media print { .ui-panel, #pasteModal, .print-note, .app-footprint { display: none !important; } body { background: white; } #vanta-bg { display: none !important; } }
 
         #vanta-bg { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; }
+        .sky-topbar { position: fixed; top: 0; left: 0; width: 100vw; height: 85vh; background: linear-gradient(to bottom,
+            #000000 0%,
+            #000814 30%,
+            #041a4d 50%,
+            #0a4fa8 68%,
+            #2e8fd6 80%,
+            rgba(46,143,214,0) 95%); z-index: 0; pointer-events: none; }
+        @media print { .sky-topbar { display: none !important; } }
         .ui-panel { z-index: 100; }
         #pasteModal { z-index: 2000; }
         .label-page { z-index: 1; }
@@ -84,6 +92,7 @@ opacity:.12;pointer-events:none;white-space:nowrap;
 <body>
 
 <div id="vanta-bg"></div>
+<div class="sky-topbar"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
 <script>
