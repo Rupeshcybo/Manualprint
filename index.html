@@ -33,7 +33,7 @@
         th:nth-child(2), td:nth-child(2) { width: 9mm; }
         th:nth-child(3), td:nth-child(3) { width: 31mm; }
         th:nth-child(4), td:nth-child(4) { width: 36mm; }
-        th { font-family: "Times New Roman", Times, serif; font-weight: bold; font-size: 2.9mm; white-space: nowrap; }
+        th { font-family: "Times New Roman", Times, serif; font-weight: bold; font-size: 2.9mm; white-space: nowrap; height: 4.05mm; }
         tr.hidden { display: none; }
 
         tr.duplicate-serial td { background-color: #fff3e0; border: 2px solid #ef6c00; }
@@ -57,9 +57,9 @@
         #footer-barcode-svg { width: 80mm; height: 40px; display: block; }
 
         /* Only move weight and signature sections 8mm downward; keep QR/barcode unchanged. */
-        .footer-left { transform: translateY(8mm); }
+        .footer-left { transform: translateY(7.95mm); }
         .footer-center > .sig-line,
-        .footer-center > .sig-label { transform: translateY(8mm); }
+        .footer-center > .sig-label { transform: translateY(7.95mm); }
 
         .ui-panel { position: fixed; right: 20px; top: 20px; display: flex; flex-direction: column; gap: 10px; z-index: 100; }
         button { padding: 10px 15px; border: none; background: #5b4a8c; color: white; cursor: pointer; font-weight: bold; border-radius: 4px; }
