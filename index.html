@@ -50,16 +50,16 @@
         .footer-left div { font-family: "Times New Roman", Times, serif; font-size: 4mm; font-weight: bold; }
         .footer-center { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
         .barcode-qr-container { display: flex; align-items: flex-end; gap: 8mm; margin-bottom: 4mm; margin-right: 2mm; }
-        .sig-line { font-size: 11px; font-weight: bold; border-top: none; width: 150px; padding-top: 3px; text-align: center; margin-top: 3px; font-family: "Times New Roman", Times, serif; }
-        .sig-label { font-size: 10px; text-align: center; font-family: "Times New Roman", Times, serif; margin-top: 3mm; }
+        .sig-line { font-size: 15px; font-weight: bold; border-top: none; width: 150px; padding-top: 3px; text-align: center; margin-top: 3px; font-family: "Times New Roman", Times, serif; }
+        .sig-label { font-size: 15px; text-align: center; font-family: "Times New Roman", Times, serif; margin-top: 3mm; font-weight: bold; }
         #qrcode { width: 130px; height: 130px; flex: 0 0 130px; position: relative; overflow: visible; }
         #qrcode img { width: 145px !important; height: 145px !important; display: block; position: absolute; left: 0; top: 0; }
         #footer-barcode-svg { width: 80mm; height: 40px; display: block; }
 
-        /* Only move weight and signature sections 9mm downward; keep QR/barcode unchanged. */
-        .footer-left { transform: translateY(9mm); }
+        /* Only move weight and signature sections 8mm downward; keep QR/barcode unchanged. */
+        .footer-left { transform: translateY(8mm); }
         .footer-center > .sig-line,
-        .footer-center > .sig-label { transform: translateY(9mm); }
+        .footer-center > .sig-label { transform: translateY(8mm); }
 
         .ui-panel { position: fixed; right: 20px; top: 20px; display: flex; flex-direction: column; gap: 10px; z-index: 100; }
         button { padding: 10px 15px; border: none; background: #5b4a8c; color: white; cursor: pointer; font-weight: bold; border-radius: 4px; }
